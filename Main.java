@@ -32,6 +32,7 @@
 import Lib.MyException;
 import Lib.Work;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -53,7 +54,8 @@ public class Main {
             catch(MyException e){
                 System.out.println(e.getMessage());
             }
-            catch(Exception e){
+            catch(InputMismatchException e){
+                e.printStackTrace();
                 System.out.println("Введено не число!");
             }
         }

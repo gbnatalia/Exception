@@ -3,5 +3,6 @@ package Lib;
 public class MyException extends Exception {
     public MyException (String message) {
         super(message);
+        printStackTrace();
     }
 }
